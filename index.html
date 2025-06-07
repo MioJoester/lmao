@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity Music</title>
 
     <style>
-
         body {
             background-color: #000;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        #contain{
+        #contain {
             height: 350px;
             width: 100%;
             display: flex;
@@ -24,13 +24,19 @@
         }
 
         #visual {
+
             height: 450px;
             width: 250px;
             background-image: url(https://miojoester.github.io/Dreamy-Time/aasset/utf-8-en.jpg);
             background-color: transparent;
             background-size: contain;
             background-repeat: no-repeat;
-            
+
+        }
+
+
+        #mobile {
+            display: none;
         }
 
         @media only screen and (max-width: 600px) {
@@ -38,28 +44,44 @@
             #contain {
                 flex-direction: column;
             }
+
+
+            #visual {
+                display: none;
+            }
+
+         
+            #mobile {  
+                margin-top: 200px;
+                display:block ;
+                width: 25vb;
+            }
         }
     </style>
 </head>
+
 <body>
-<center>
+    <center>
 
-    <div id="contain">
+        <div id="contain">
 
-        <div id="visual"></div>
+            <div id="visual"></div>
+            <img id="mobile" src="https://miojoester.github.io/Dreamy-Time/aasset/utf-8-en.jpg">
 
 
-        <div id="second-wrapper">
-    <h1>Welcome to Infinity Music</h1>
 
-    <P>
-        Mitesh Yadav, Himanshu Yadav
-    </P>
+            <div id="second-wrapper">
+                <h1>Welcome to Infinity Music</h1>
 
-    </div>
-    </div>
-</center>
+                <P>
+                    Mitesh Yadav, Himanshu Yadav
+                </P>
+
+            </div>
+        </div>
+    </center>
 
 
 </body>
+
 </html>
